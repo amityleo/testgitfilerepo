@@ -1,0 +1,8 @@
+steps:
+- name: gcr.io/cloud-builders/git
+  args: ['fetch', '--unshallow', 'origin', 'master']
+  id: 'git-fetch'
+
+timeout: 1200s
+options:
+  machineType: N1_HIGHCPU_8
